@@ -23,6 +23,6 @@ CREATE TABLE seller_listings (
     available_stock INT NOT NULL CHECK (available_stock >= 0),
     min_order_quantity INT NOT NULL CHECK (min_order_quantity >= 1),
     is_active BOOLEAN DEFAULT TRUE,
-    version INT NOT NULL DEFAULT 0, -- Used for Spring Data JPA @Version optimistic locking
+    version INT NOT NULL DEFAULT 0,
     CONSTRAINT unique_product_seller UNIQUE (product_id, seller_id)
 );

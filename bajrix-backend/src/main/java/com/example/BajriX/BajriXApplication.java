@@ -8,7 +8,7 @@ public class BajriXApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BajriXApplication.class, args);
-        System.out.println("hi");
+        System.out.println("Lets do this...");
 	}
 
 
