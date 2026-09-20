@@ -58,6 +58,8 @@ npm run dev
 
 The frontend UI will be accessible at **http://localhost:5173**.
 
+> A slight uncalled for note. this is the ui i am not particularly proud of but due to severe time constarins and focus on polishing the backend i made one that was serviceable.
+
 > To view the seller dashboard, click **"I am a seller"** and use the mock credentials: `admin` / `password`.
 
 
