@@ -29,7 +29,7 @@ export default function ProductDetailsPage() {
                     onClick={() => navigate(-1)} 
                     style={{ marginBottom: '1.5rem', backgroundColor: '#6c757d', color: 'white' }}
                 >
-                    &larr; Back to Catalog
+                    &larr; Back
                 </button>
 
                 <h2>Sellers for this Product</h2>
