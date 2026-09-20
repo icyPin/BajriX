@@ -41,7 +41,7 @@ export default function ProductDetailsPage() {
                 ) : (
                     <div className="seller-list">
                         {sellers.map(seller => (
-                            <div key={seller.listingId} className="card" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <div key={seller.listingId} className="card list-card" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                                 <div>
                                     <h4>{seller.sellerName}</h4>
                                     <p><strong>Price:</strong> ₹{seller.price}</p>

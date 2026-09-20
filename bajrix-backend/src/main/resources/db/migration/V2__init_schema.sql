@@ -1,4 +1,4 @@
--- Create Sellers Table
+--Sellers Table
 CREATE TABLE sellers (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     name VARCHAR(255) NOT NULL,
@@ -6,7 +6,7 @@ CREATE TABLE sellers (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create Products Table (Universal Catalog)
+--Products Table (Universal Catalog)
 CREATE TABLE products (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     name VARCHAR(255) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE products (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Create Seller Listings Table (The Bridge Entity)
+--Seller Listings Table (The Bridge)
 CREATE TABLE seller_listings (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     product_id UUID NOT NULL REFERENCES products(id),

@@ -13,7 +13,7 @@ export default function HomePage() {
     const query = searchParams.get('query') || '';
 
     useEffect(() => {
-        fetchProducts(currentPage, 10).then(data => {
+        fetchProducts(currentPage, 12).then(data => {
             let fetchedProducts = data.content;
             
             if (query) {

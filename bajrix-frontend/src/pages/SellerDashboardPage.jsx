@@ -69,7 +69,7 @@ export default function SellerDashboardPage() {
                     {listings.map(listing => (
                         <div 
                             key={listing.listingId} 
-                            className="card" 
+                            className="card list-card" 
                             onClick={() => openEditModal(listing)}
                             style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer', borderLeft: '4px solid #0056b3' }}
                             title="Click to edit listing"

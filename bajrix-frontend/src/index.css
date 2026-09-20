@@ -16,7 +16,7 @@ body { background-color: #ffffff; color: #333; }
 /* Cards */
 .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem; }
 .card { 
-    border: 1px solid #eee; padding: 1.5rem; border-radius: 8px; 
+    border: 1px solid #eee; padding: 1.5rem; border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05); cursor: pointer; transition: transform 0.2s;
 }
 .card:hover { transform: translateY(-3px); box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
@@ -42,4 +42,33 @@ button:hover {
 }
 .search-bar:focus {
     border-color: #0056b3;
+}
+
+/* Base Card (Shared styling) */
+.card { 
+    border: 1px solid #eee; 
+    padding: 1.5rem; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+    transition: transform 0.2s;
+    background-color: white;
+}
+
+/* Specific for the Home Page Grid */
+.product-card {
+    height: 250px;
+    cursor: pointer;
+}
+.product-card:hover { 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+/* Specific for the Lists (Seller Dashboard & Details Page) */
+.list-card {
+    /* No fixed height! Let it wrap its contents naturally */
+    margin-bottom: 1rem;
+}
+.list-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
